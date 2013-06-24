@@ -15,7 +15,7 @@ my_group = {
 
 my_group.each do |friend_name, friend_number|
 
-  # my_number = "12179797638" # <--- !!!!put your number here
+  # my_number = "19173489913" # <--- !!!!put your number here
   text_message = "Hello #{friend_name} from Hacking for Hustlers!"
 
   my_hash = {

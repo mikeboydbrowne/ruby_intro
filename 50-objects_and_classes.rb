@@ -16,7 +16,7 @@ end
 puts "Me, Myself and I and my name is #{me_myself_and_i.my_name}"
 
 # How about giving me, myself and I an age?
-me_myself_and_i.age = 25
+# me_myself_and_i.age = 25
 # To run this file, you'll have to comment the line above out
 
 # This will produce an error until we do:
@@ -49,7 +49,7 @@ puts("------ Classes in Ruby ------")
 # We create a class of objects
 
 class PeopleWithNamesAndAges
- 
+
   def name_and_age_please
     "My name is David Yang and I'm #{@age} years old."
   end
@@ -76,16 +76,26 @@ puts "Name and Age Please: #{david_yang_redux.name_and_age_please}"
 
 class ShorterPeopleWithNamesAndAges
   attr_accessor :age
+  attr_accessor :name
 
   def name_and_age_please
-    "My name is David Yang and I'm #{@age} years old."
+    "My name is #{@name} and I'm #{@age} years old."
   end
 
-  def my_name
-    "David Yang"
+  def my_name=(name_value)
+    @name = namve_value
+  end
+
+  def age=(age_value)
+    @age = age_value
   end
 end
 
+mike_browne = ShorterPeopleWithNamesAndAges.new
+mike_browne.age = 19
+mike_browne.name = "Mike Browne"
+
+puts mike_browne.name_and_age_please
 
 # Exercises:
 

@@ -3,7 +3,7 @@
 # Variables are ways to give names to values in your code
 
 my_name = "David Yang"
-your_name = "YOUR NAME" # <-- put your name here between quotes
+your_name = "Mike Browne" # <-- put your name here between quotes
 
 puts "#{my_name} and #{your_name} are in the same classroom!"
 
@@ -25,7 +25,7 @@ require 'date' # this line tells the Ruby interpreter to pull in some functional
 
 today = Date.today()
 
-my_birthdate = Date.parse("29-05-2013")
+my_birthdate = Date.parse("12-9-1993")
 
 days_until_my_birthday = (my_birthdate - today).to_i # the to_i converts the resulting math into an "Integer", which means no fractions
 
@@ -39,3 +39,11 @@ puts "There are only #{days_until_my_birthday} days until #{my_name}'s birthday.
 
 moon_landing = Date.parse("20-07-1969")
 american_revolution = Date.parse("04-07-1776")
+
+friend_name = "Robbie Flatow"
+friend_bday = Date.parse("4-7-1994")
+
+compare = (friend_bday - american_revolution).to_i
+
+puts "The country is #{compare} days older than #{friend_name}"
+

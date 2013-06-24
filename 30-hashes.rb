@@ -27,7 +27,9 @@ end
 # Exercise 1:
 # Create a lookup hash that can answer these questions:
 us_states = {
-
+  "GA" => "Georgia",
+  "CA" => "California",
+  "NY" => "New York"
 }
 
 puts "The long name of GA is #{us_states["GA"]}"

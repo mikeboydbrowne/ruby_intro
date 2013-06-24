@@ -1,6 +1,6 @@
 # In this file, we'll explore creating and calling "methods" a.k.a. "functions"
 
-# A method is a block of code that you can call to run and pass certain inputs 
+# A method is a block of code that you can call to run and pass certain inputs
 
 ##########################################################################################
 puts("------ Creating Methods ------")
@@ -40,7 +40,10 @@ puts("------ Exercises ------")
 # Try creating a method called puts_strings_x_times(times, string) that takes a number and a string and outputs it "times" times
 
 def puts_strings_x_times(times, string)
-  # put your code here
+  while times > 0
+    puts string
+    times -= 1
+  end
 end
 
 puts_strings_x_times(3, "You should see this three times!")
@@ -50,7 +53,13 @@ puts_strings_x_times(2, "2 is the luckiest number, that you've ever seen.")
 # Exercise 2
 # Creating a method called add_array_of_numbers that takes an array and uses add_two_numbers
 def add_array_of_numbers(number_array)
+  base = 0
 
+  number_array.each do |x|
+    base = add_two_numbers(base, x)
+  end
+
+  return base
 end
 
 total_sum = add_array_of_numbers([1,2,3,4,5,6,7,8,9,10])

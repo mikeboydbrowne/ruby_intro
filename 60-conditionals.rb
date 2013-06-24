@@ -6,7 +6,7 @@ hacking_class = ["Nimit", "David", "Evan", "Zach", "Esther", "John", "Peter", "L
 
 puts "There are #{hacking_class.size} people in the Hacking for Hustlers class!"
 
-if hacking_class.size < 10 
+if hacking_class.size < 10
   puts "There are less than 10 people in this class."
 elsif hacking_class.size > 10
   puts "There are more than 10 people in this class."
@@ -21,5 +21,11 @@ end
 # otherwise, print it lowercased ("asdf".downcase)
 
 hacking_class.each do |name|
-  # your code here
+  if name.length < 4
+    puts name
+  elsif name.length == 5
+    puts name.reverse
+  else
+    puts name.downcase
+  end
 end

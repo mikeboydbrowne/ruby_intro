@@ -42,7 +42,7 @@ my_friends.each do |friend|
   puts "#{friend} is a friend of mine."
 end
 
-# notice this: 
+# notice this:
 # do |variable|
 #   .. code ..
 # end
